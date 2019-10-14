@@ -13,3 +13,5 @@
 https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
 
 https://medium.com/@shakyShane/lets-talk-about-docker-artifacts-27454560384f
+
+https://www.callicoder.com/docker-golang-image-container-example/
