@@ -1,6 +1,6 @@
 # Doraemon
 
-####  Set up Environment
+####  Set up React Environment
 ######Building your image
 
 ###### switch node mirror to `npm config set registry https://registry.npm.taobao.org` first
@@ -8,6 +8,14 @@
 ###### `docker build -t <your username>/react-app .`
 ###### after building, run `docker image` to check if image exists, then `docker run -p 49160:80 -d <your username>/react-app` to run app in browser
 ###### then `docker ps` to see daemon process is running, and visit `http://localhost:49160` in browser.
+
+
+######Building Go image
+
+###### cd into go-docker folder, at same level with Dockerfile, run below commands
+###### `docker build -t go-docker .`
+###### after building, run `docker image ls` to check if image exists, then `docker run -d -p 8181:8080 go-docker` to run app in browser
+###### then `docker ps` to see go process is running
 
 #### Useful Links
 https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
