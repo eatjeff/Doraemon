@@ -17,9 +17,19 @@
 ###### after building, run `docker image ls` to check if image exists, then `docker run -d -p 8181:8080 go-docker` to run app in browser
 ###### then `docker ps` to see go process is running
 
+######Install minicube and k8s
+minikube start --registry-mirror=https://registry.docker-cn.com --kubernetes-version v1.16.2
+minikube start --vm-driver=virtualbox --apiserver-ips 127.0.0.1 --apiserver-name localhost --alsologtostderr -v=8
+
 #### Useful Links
 https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
 
 https://medium.com/@shakyShane/lets-talk-about-docker-artifacts-27454560384f
 
-https://www.callicoder.com/docker-golang-image-container-example/
+https://www.callicoder.com/docker-golang-image-container-example/s
+
+https://kubernetes.io/docs/tasks/tools/install-minikube/
+
+https://kubernetes.io/docs/tasks/tools/install-kubectl/
+
+
